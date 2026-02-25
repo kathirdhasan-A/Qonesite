@@ -34,7 +34,7 @@ const navVariants : Variants = {
 
 export default function MainSection() {
     return (
-        <div className="flex back flex-col md:justify-around  items-center bg-black md:h-screen pt-5 px-2  md:pt-10">
+        <div className="flex back flex-col md:justify-around  items-center bg-black md:h-full pt-5 px-2  md:pt-15">
             <motion.div 
             initial="hidden"
             whileInView="visible"
@@ -47,31 +47,31 @@ export default function MainSection() {
                 </div>
                 <div className="w-[45%]  hidden md:flex justify-between text-lg transition text-[#A0A0A0]">
                     <Link href={'#'}
-                        className="hover:border-b  border-b-[#5D3FD3] hover:text-[#5D3FD3] transition duration-300 ease-in-out"
+                        className="hover:border-b  hover:border-b-[#5D3FD3] border-b border-transparent hover:text-[#5D3FD3] transition duration-300 ease-in-out"
 
                     >About Us</Link>
                     <Link href={'#'}
-                        className="hover:border-b  border-b-[#5D3FD3] hover:text-[#5D3FD3] transition duration-300 ease-in-out"
+                        className="hover:border-b  hover:border-b-[#5D3FD3] border-b border-transparent  hover:text-[#5D3FD3] transition duration-300 ease-in-out"
                     >Features</Link>
                     <Link href={'#'}
-                        className="hover:border-b  border-b-[#5D3FD3] hover:text-[#5D3FD3] transition duration-300 ease-in-out"
+                        className="hover:border-b  hover:border-b-[#5D3FD3] border-b border-transparent  hover:text-[#5D3FD3] transition duration-300 ease-in-out"
                     >Solutions</Link>
                     <Link href={'#'}
-                        className="hover:border-b  border-b-[#5D3FD3] hover:text-[#5D3FD3] transition duration-300 ease-in-out"
+                        className="hover:border-b  hover:border-b-[#5D3FD3] border-b border-transparent  hover:text-[#5D3FD3] transition duration-300 ease-in-out"
                     >Pricing</Link>
                     <Link href={'#'}
-                        className="hover:border-b  border-b-[#5D3FD3] hover:text-[#5D3FD3] transition duration-300 ease-in-out"
+                        className="hover:border-b  hover:border-b-[#5D3FD3] border-b border-transparent  hover:text-[#5D3FD3] transition duration-300 ease-in-out"
                     >FAQs</Link>
                     <Link href={'#'}
-                        className="hover:border-b  border-b-[#5D3FD3] hover:text-[#5D3FD3] transition duration-300 ease-in-out"
+                        className="hover:border-b  hover:border-b-[#5D3FD3] border-b border-transparent  hover:text-[#5D3FD3] transition duration-300 ease-in-out"
                     >Contact</Link>
                 </div>
                 <div className="flex items-center gap-3">
-                    <button className="md:bg-[#5D3FD3] md:px-3 md:py-3 rounded block font-semibold">
+                    <button className="px-2 bg-[#5D3FD3] md:px-3 md:py-3 rounded block font-semibold">
                         <span className="hidden md:block">
                             Get Instant Access
                         </span>
-                        <BsCloudPlus className="md:hidden h-5 w-5 "/>
+                        <span className="md:hidden text-sm">Get</span>
                     </button>
                     <RxHamburgerMenu  className="block md:hidden h-7 w-6" />
                 </div>
@@ -114,8 +114,8 @@ export default function MainSection() {
                 </motion.div>
 
                 <motion.div variants={itemVariants} className="flex gap-5">
-                    <button className="bg-[#5D3FD3] text-sm p-2 md:text-md md:px-4 md:py-2 rounded font-semibold">Get Instant Access</button>
-                    <button className="bg-gray-500 text-sm p-2 md:text-md md:px-4 md:py-2 hover:ring-2 rounded ring-[#A0A0A0]">Learn More</button>
+                    <button className="bg-[#5D3FD3] text-sm md:h-12 p-2 md:text-md md:px-4 md:py-2 rounded font-semibold">Get Instant Access</button>
+                    <button className="bg-gray-500 text-sm md:h-12 p-2 md:text-md md:px-4 md:py-2 hover:ring-2 rounded ring-[#A0A0A0]">Learn More</button>
                 </motion.div>
             </motion.div>
 
