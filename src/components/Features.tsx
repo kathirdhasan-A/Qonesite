@@ -24,7 +24,7 @@ const itemVariants: Variants = {
 
 export default function Features() {
   return (
-    <div className="back transition duration-300 md:h-screen  justify-evenly flex flex-col">
+    <div className="back transition duration-300   justify-evenly flex flex-col" id="features">
       <motion.div
         initial="hidden"
         whileInView="visible"
