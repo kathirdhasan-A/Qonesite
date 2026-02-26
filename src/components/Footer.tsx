@@ -52,17 +52,17 @@ export default function Footer() {
                         <div>
                             <h3 className="text-white font-semibold mb-3">Company</h3>
                             <ul className="space-y-2">
-                                <li><a href="#" className="hover:text-[#5D3FD3]">About Us</a></li>
-                                <li><a href="#" className="hover:text-[#5D3FD3]">Features</a></li>
-                                <li><a href="#" className="hover:text-[#5D3FD3]">Solutions</a></li>
-                                <li><a href="#" className="hover:text-[#5D3FD3]">Pricing</a></li>
+                                <li><a href="#about" className="hover:text-[#5D3FD3]">About Us</a></li>
+                                <li><a href="#features" className="hover:text-[#5D3FD3]">Features</a></li>
+                                <li><a href="#solutions" className="hover:text-[#5D3FD3]">Solutions</a></li>
+                                <li><a href="#pricing" className="hover:text-[#5D3FD3]">Pricing</a></li>
                             </ul>
                         </div>
                         <div>
                             <h3 className="text-white font-semibold mb-3">Support</h3>
                             <ul className="space-y-2">
-                                <li><a href="#" className="hover:text-[#5D3FD3]">FAQs</a></li>
-                                <li><a href="#" className="hover:text-[#5D3FD3]">Contact</a></li>
+                                <li><a href="#faqs" className="hover:text-[#5D3FD3]">FAQs</a></li>
+                                <li><a href="#contact" className="hover:text-[#5D3FD3]">Contact</a></li>
                                 <li><a href="#" className="hover:text-[#5D3FD3]">Help Center</a></li>
                                 <li><a href="#" className="hover:text-[#5D3FD3]">Privacy Policy</a></li>
                             </ul>

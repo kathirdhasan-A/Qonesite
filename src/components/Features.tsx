@@ -49,9 +49,9 @@ export default function Features() {
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-4 mt-6"
         >
-          <button className="bg-[#5D3FD3] px-4 py-2 sm:px-6  sm:py-3 rounded font-semibold text-white justify-center flex items-center gap-2">
+          <button className="bg-[#5D3FD3] px-4 py-2 sm:px-6 border border-transparent hover:border-iris hover:bg-iris/20 sm:py-3 rounded font-semibold text-white justify-center flex items-center gap-2">
             <span className="md:hidden  ">Get</span>
-            <span className="hidden md:block">Get Instant Access</span>
+            <span className="hidden md:block ">Get Instant Access</span>
           </button>
           <button className="bg-gray-600 px-4 py-2 sm:px-6 sm:py-3 rounded font-semibold text-white hover:ring-2 ring-[#A0A0A0]">
             Learn More
@@ -81,7 +81,7 @@ export default function Features() {
           className="flex flex-col gap-3 md:gap-5"
         >
           <div className="flex flex-col md:flex-row w-full justify-center items-center gap-3">
-            <div className="bg-[#5D3FD3]  group flex flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10  hover:border hover:border-[#5D3FD3] transition duration-300">
+            <div className="bg-[#5D3FD3]  group flex flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10 hover:scale-102  hover:border hover:border-[#5D3FD3] transition duration-300">
               <div className="flex items-center md:flex-col md:items-start md:gap-5 w-full justify-between pr-10">
                 <LuSquareArrowOutUpRight className="text-5xl border  group-hover:bg-[#5D3FD3] group-hover:border-[#5D3FD3] transition duration-300 p-3 rounded-full" />
                 <h2 className="md:font-bold md:text-2xl  ">
@@ -93,7 +93,7 @@ export default function Features() {
                 yournetwork.{" "}
               </p>
             </div>
-            <div className="bg-[#5D3FD3]  group flex  flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10  hover:border hover:border-[#5D3FD3] transition duration-300">
+            <div className="bg-[#5D3FD3]  group flex  flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10 hover:scale-102  hover:border hover:border-[#5D3FD3] transition duration-300">
               <div className="flex items-center md:flex-col md:items-start md:gap-5 w-full justify-between pr-10">
 
               <LuSquareArrowOutUpRight className="text-5xl border  group-hover:bg-[#5D3FD3] group-hover:border-[#5D3FD3] transition duration-300 p-3 rounded-full" />
@@ -104,7 +104,7 @@ export default function Features() {
                 data.
               </p>
             </div>
-            <div className="bg-[#5D3FD3]  group flex  flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10  hover:border hover:border-[#5D3FD3] transition duration-300">
+            <div className="bg-[#5D3FD3]  group flex  flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10 hover:scale-102  hover:border hover:border-[#5D3FD3] transition duration-300">
             <div className="flex items-center md:flex-col md:items-start md:gap-5 w-full justify-between pr-10">
               <LuSquareArrowOutUpRight className="text-5xl border  group-hover:bg-[#5D3FD3] group-hover:border-[#5D3FD3] transition duration-300 p-3 rounded-full" />
               <h2 className="md:font-bold md:text-2xl  ">
@@ -118,7 +118,7 @@ export default function Features() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row w-full justify-center items-center gap-3">
-            <div className="bg-[#5D3FD3]  group flex flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10  hover:border hover:border-[#5D3FD3] transition duration-300">
+            <div className="bg-[#5D3FD3]  group flex flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10 hover:scale-102  hover:border hover:border-[#5D3FD3] transition duration-300">
               <div className="flex items-center md:flex-col md:items-start md:gap-5 w-full justify-between pr-10">
                 <LuSquareArrowOutUpRight className="text-5xl border  group-hover:bg-[#5D3FD3] group-hover:border-[#5D3FD3] transition duration-300 p-3 rounded-full" />
                 <h2 className="md:font-bold md:text-2xl  ">
@@ -130,7 +130,7 @@ export default function Features() {
                 yournetwork.{" "}
               </p>
             </div>
-            <div className="bg-[#5D3FD3]  group flex  flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10  hover:border hover:border-[#5D3FD3] transition duration-300">
+            <div className="bg-[#5D3FD3]  group flex  flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10 hover:scale-102  hover:border hover:border-[#5D3FD3] transition duration-300">
               <div className="flex items-center md:flex-col md:items-start md:gap-5 w-full justify-between pr-10">
 
               <LuSquareArrowOutUpRight className="text-5xl border  group-hover:bg-[#5D3FD3] group-hover:border-[#5D3FD3] transition duration-300 p-3 rounded-full" />
@@ -141,7 +141,7 @@ export default function Features() {
                 data.
               </p>
             </div>
-            <div className="bg-[#5D3FD3]  group flex  flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10  hover:border hover:border-[#5D3FD3] transition duration-300">
+            <div className="bg-[#5D3FD3]  group flex  flex-col justify-around w-[75%] md:h-60 md:w-[19%] gap-5  p-4 rounded-lg border border-transparent hover:bg-[#5D3FD3]/10 hover:scale-102  hover:border hover:border-[#5D3FD3] transition duration-300">
             <div className="flex items-center md:flex-col md:items-start md:gap-5 w-full justify-between pr-10">
               <LuSquareArrowOutUpRight className="text-5xl border  group-hover:bg-[#5D3FD3] group-hover:border-[#5D3FD3] transition duration-300 p-3 rounded-full" />
               <h2 className="md:font-bold md:text-2xl  ">

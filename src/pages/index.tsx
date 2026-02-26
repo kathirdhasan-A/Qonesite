@@ -8,6 +8,8 @@ import Pricing from "@/components/Pricing";
 import Solutions from "@/components/Solutions";
 import Visual from "@/components/Visual";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { FaArrowUp } from "react-icons/fa6";
 
 
 
@@ -24,6 +26,7 @@ export default function Home() {
       <Faq/>
       <Contact/>
       <Footer/>
+      <Link href={"#home"} className="fixed bottom-10 right-10"><FaArrowUp/></Link>
     </motion.div>
   );
 }

@@ -36,7 +36,7 @@ export default function Visual() {
   return (
     <div className="md:h-screen pt-20 md:pt-0 back px-2 flex flex-col justify-center items-center" id="samples">
       {/* <div className="bg-green-50 h-20 w-full"></div> */}
-      <div className="md:h-[70%] md:w-[70%] p-2 border-3 rounded-lg border-[#5d3fd326] shadow-[0_14px_50px_#5d3fd326] flex justify-center items-center cursor-pointer">
+      <div className="h-55 w-[90%] md:h-[70%] md:w-[70%] p-2 border-3 rounded-lg border-[#5d3fd326] shadow-[0_14px_50px_#5d3fd326] flex justify-center items-center cursor-pointer">
         <YouTube videoId="ZjAqacIC_3c" className="w-full h-full " opts={opts} />
       </div>
       <motion.div

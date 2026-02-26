@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@config "../../tailwind.config.js";
+
 
 :root {
   --primary-iris: #5D3FD3;
@@ -11,6 +13,7 @@
 body {
   background-color: #000000;
   color: #FFFFFF;
+  scroll-behavior: smooth;
 }
 
 .back {
