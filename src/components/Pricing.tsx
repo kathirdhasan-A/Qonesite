@@ -18,42 +18,43 @@ export default function Packages() {
         <div className="flex gap-6 justify-center pt-10 flex-wrap">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="bg-[#5D3FD3] rounded-2xl p-6 flex flex-col gap-4 text-white shadow-xl w-[320px] transition-transform duration-300"
+            className="bg-[#5D3FD3] rounded-2xl p-6 flex flex-col gap-4 text-white shadow-xl  transition-transform duration-300 justify-between items-center"
           >
-            <h2 className="text-2xl font-bold">Complete package</h2>
-            <p className="text-sm opacity-90">
-              Get ahead of the game by mastering Webflow.
-            </p>
-            <p className="text-xl font-semibold">$699.00</p>
-            <ul className="list-disc list-inside space-y-1 text-md opacity-90">
-              <li>
-                <div>Full Webflow course</div>
-              </li>
-              <li>
-                <div>2 months mentoring & office hours with Laura Mitchell</div>
-              </li>
-              <li>
-                <div>CMS integration</div>
-              </li>
-              <li>
-                <div>Relume Starter trial + Webflow discount</div>
-              </li>
-              <li>
-                <div>Private community access</div>
-              </li>
-              <li>
-                <div>Lifetime access & updates</div>
-              </li>
-            </ul>
-            <button className="bg-white text-iris px-4 py-2 sm:px-6 border border-transparent cursor-pointer sm:py-3 rounded font-semibold justify-center flex items-center gap-2">
-              <span className="md:hidden  ">Get</span>
-              <span className="hidden md:block ">Get Instant Access</span>
-            </button>
+            <div className=" rounded-2xl p-6 flex flex-col gap-4 text-white transition-transform duration-300">
+              <h2 className="text-2xl font-bold">Complete package</h2>
+              <p className="text-sm opacity-90">
+                Kickstart your Webflow journey with essentials.
+              </p>
+              <p className="text-xl font-semibold">$699.00</p>
+              <ul className="list-disc list-inside space-y-4 text-md opacity-90">
+                <li>
+                  Intro Webflow course
+                </li>
+                <li>
+                  1 month mentoring
+                </li>
+                <li>
+                  Basic CMS setup
+                </li>
+                <li>
+                  Community access
+                </li>
+                <li>
+                  Lifetime access to starter content
+                </li>
+              </ul>
+            </div>
+            <div>
+              <button className="bg-white text-iris px-4 py-2 sm:px-6 border border-transparent cursor-pointer sm:py-3 rounded font-semibold justify-center flex items-center gap-2">
+                <span className="md:hidden  ">Get</span>
+                <span className="hidden md:block ">Get Instant Access</span>
+              </button>
+            </div>
           </motion.div>
 
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="bg-[#5D3FD3] rounded-2xl p-6 flex flex-col gap-4 text-white shadow-xl w-[320px] transition-transform duration-300 justify-between items-center"
+            className="bg-[#5D3FD3] rounded-2xl p-6 flex flex-col gap-4 text-white shadow-xl  transition-transform duration-300 justify-between items-center"
           >
             <div className=" rounded-2xl p-6 flex flex-col gap-4 text-white transition-transform duration-300">
               <h2 className="text-2xl font-bold">Starter package</h2>
@@ -61,21 +62,21 @@ export default function Packages() {
                 Kickstart your Webflow journey with essentials.
               </p>
               <p className="text-xl font-semibold">$299.00</p>
-              <ul className="list-disc list-inside space-y-1 text-sm opacity-90">
+              <ul className="list-disc list-inside space-y-4 text-md opacity-90">
                 <li>
-                  <div>Intro Webflow course</div>
+                  Intro Webflow course
                 </li>
                 <li>
-                  <div>1 month mentoring</div>
+                  1 month mentoring
                 </li>
                 <li>
-                  <div>Basic CMS setup</div>
+                  Basic CMS setup
                 </li>
                 <li>
-                  <div>Community access</div>
+                  Community access
                 </li>
                 <li>
-                  <div>Lifetime access to starter content</div>
+                  Lifetime access to starter content
                 </li>
               </ul>
             </div>
