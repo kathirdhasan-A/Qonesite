@@ -14,7 +14,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     const transporter = nodemailer.createTransport({
-      service: "gmail", // or use SMTP provider
+      service: "gmail", 
       auth: {
         user: process.env.MAIL_USER, // office mail
         pass: process.env.MAIL_PASS, // app password
