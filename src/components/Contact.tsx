@@ -1,7 +1,6 @@
 import { Variants, motion } from "framer-motion";
-import { SMTPClient } from "emailjs";
 import { useState } from "react";
-import emailjs from '@emailjs/browser';
+
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -22,10 +21,10 @@ const itemVariants: Variants = {
 
 
 
-
-
-
 export default function Contact() {
+
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,9 +36,33 @@ export default function Contact() {
       ...prevData,
       [name]: value,
     }));
-    console.log(formData);
   };
 
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoading(true);
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+    if (response.ok) {
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      alert(result.error || "Failed to send message");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Something went wrong");
+  } finally {
+    setLoading(false);
+  }
+};
 
 
   return (
@@ -69,6 +92,7 @@ export default function Contact() {
         <motion.form
           variants={itemVariants}
           className="w-full flex flex-col gap-4 mt-4"
+          onSubmit={handleSubmit}
         >
           <div className="flex flex-col md:flex-row gap-4">
             <input
@@ -98,9 +122,21 @@ export default function Contact() {
             rows={4}
             className="w-full bg-zinc-900 border border-zinc-800 rounded-lg p-4 focus:outline-none focus:border-iris transition-colors"
           />
-          <button type="submit" className="bg-iris hover:bg-opacity-90 text-white font-bold py-4 rounded-lg transition-all active:scale-[0.98]">
-            Send Message
-          </button>
+         <button
+  type="submit"
+  disabled={loading}
+  className="bg-iris hover:bg-opacity-90 text-white font-bold py-4 rounded-lg transition-all active:scale-[0.98] flex items-center justify-center"
+>
+  {loading ? (
+    <motion.div
+      animate={{ rotate: 360 }}
+      transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
+      className="w-5 h-5 border-2 border-white border-t-transparent rounded-full"
+    />
+  ) : (
+    "Send Message"
+  )}
+</button>
         </motion.form>
 
         <motion.div

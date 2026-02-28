@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Packages() {
   return (
     <div className="back " id="pricing">
-      <motion.div className="md:h-screen flex flex-col items-center justify-center gap-10 ">
+      <motion.div className="lg:h-screen flex flex-col items-center justify-center gap-10 ">
         <div className="text-center max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Choose Your Package
