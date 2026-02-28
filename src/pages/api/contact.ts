@@ -27,7 +27,7 @@ await transporter.sendMail({
   subject: `New Contact Form Message from ${name}`,
   html: `
     <div style="background-color:#000000; color:#ffffff; font-family:Arial, sans-serif; padding:20px; border-radius:8px;">
-      <h2 style="color:#5D3FD3; margin-bottom:10px;">📩 New Contact Form Submission</h2>
+      <h2 style="color:#5D3FD3; margin-bottom:10px;"> New Contact Form Submission</h2>
       <p style="margin:8px 0;"><strong style="color:#5D3FD3;">Name:</strong> ${name}</p>
       <p style="margin:8px 0;"><strong style="color:#5D3FD3;">Email:</strong> ${email}</p>
       <p style="margin:8px 0;"><strong style="color:#5D3FD3;">Message:</strong></p>
